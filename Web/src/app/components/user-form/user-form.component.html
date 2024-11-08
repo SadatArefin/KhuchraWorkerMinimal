@@ -1,0 +1,12 @@
+<h2 *ngIf="isEditMode">Edit User</h2>
+<h2 *ngIf="!isEditMode">Create User</h2>
+
+<form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+  <label for="name">Name:</label>
+  <input id="name" formControlName="name" />
+
+  <label for="email">Email:</label>
+  <input id="email" formControlName="email" />
+
+  <button type="submit">{{ isEditMode ? "Update" : "Create" }}</button>
+</form>

@@ -9,6 +9,13 @@ namespace KhuchraWorkerMinimal.Controllers;
 [ApiController]
 public class UserController(IUserService userService) : ControllerBase
 {
+    [HttpGet]
+    public async Task<ActionResult<IEnumerable<BaseUser>>> GetUsers()
+    {
+        var users = await userService.GetAllUsersAsync();
+        return Ok(users);
+    }
+
     [HttpGet("{id}")]
     public async Task<ActionResult<BaseUser>> GetUser(int id)
     {
