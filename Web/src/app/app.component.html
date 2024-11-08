@@ -1,3 +1,12 @@
-<app-user-list></app-user-list>
+<div class="container">
+  <h1>Khuchra Workers Management</h1>
+  <nav>
+    <button routerLink="/users" routerLinkActive="active">View Users</button>
+    <button routerLink="/add-user" routerLinkActive="active">Add User</button>
+  </nav>
 
-<router-outlet />
+  <hr />
+
+  <!-- Router outlet for loading different components based on route -->
+  <router-outlet></router-outlet>
+</div>
