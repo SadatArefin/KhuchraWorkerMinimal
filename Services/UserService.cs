@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace KhuchraWorkerMinimal.Services;
 
-public class UserService: IUserService
+public class UserService : IUserService
 {
     private readonly KhuchraWorkerContext _context;
 
@@ -16,7 +16,11 @@ public class UserService: IUserService
 
     public async Task<IEnumerable<BaseUser>> GetAllUsersAsync() => await _context.Users.ToListAsync();
 
-    public async Task<BaseUser> GetUserByIdAsync(int id) => await _context.Users.FindAsync(id);
+    public async Task<BaseUser> GetUserByIdAsync(int id)
+    {
+        var user = await _context.Users.FindAsync(id);
+        return user ?? throw new NullReferenceException();
+    }
 
     public async Task<BaseUser> AddUserAsync(BaseUser user)
     {

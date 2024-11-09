@@ -10,7 +10,7 @@
 
         public string? PaymentCode { get; set; }
 
-        public decimal Amount { get; set; }
+        public required decimal Amount { get; set; }
 
         public BaseUser? PaidBy { get; set; }
 
