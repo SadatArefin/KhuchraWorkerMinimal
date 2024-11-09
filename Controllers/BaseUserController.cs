@@ -7,7 +7,7 @@ namespace KhuchraWorkerMinimal.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
-public class UserController(IUserService userService) : ControllerBase
+public class BaseUserController(IUserService userService) : ControllerBase
 {
     [HttpGet]
     public async Task<ActionResult<IEnumerable<BaseUser>>> GetUsers()
@@ -24,7 +24,7 @@ public class UserController(IUserService userService) : ControllerBase
     }
 
     [HttpPost]
-    public async Task<ActionResult<BaseUser>> CreateUser(UserDto userDto)
+    public async Task<ActionResult<BaseUser>> CreateUser(BaseUserDto userDto)
     {
         var user = new BaseUser { Name = userDto.Name, Email = userDto.Email };
         var createdUser = await userService.AddUserAsync(user);
@@ -32,7 +32,7 @@ public class UserController(IUserService userService) : ControllerBase
     }
 
     [HttpPut("{id}")]
-    public async Task<IActionResult> UpdateUser(int id, UserDto userDto)
+    public async Task<IActionResult> UpdateUser(int id, BaseUserDto userDto)
     {
         var user = await userService.GetUserByIdAsync(id);
 
