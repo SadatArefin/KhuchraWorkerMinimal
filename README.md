@@ -9,7 +9,7 @@ A freelance marketplace to manage remote work relationships. One of my friends, 
 - **PostgreSQL**
 
 ### Frontend
-- **Nextjs**
+- **Angular**
 - **Real-time Features**
 
 
@@ -66,7 +66,7 @@ A freelance marketplace to manage remote work relationships. One of my friends, 
 
 ## 🚧 Development Status
 
-Current Version: Alpha 0.0.1
+Current Version: Preliminary 0.0.2
 - Core features ongoing
 - Testing phase
 - Gathering core requirement 
