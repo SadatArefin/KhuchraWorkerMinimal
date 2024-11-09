@@ -1,4 +1,6 @@
-﻿namespace KhuchraWorkerMinimal.Data.Entities
+﻿using KhuchraWorkerMinimal.Dto;
+
+namespace KhuchraWorkerMinimal.Data.Entities
 {
     public class Admin : BaseUser
     {

@@ -1,6 +1,6 @@
 ﻿namespace KhuchraWorkerMinimal.Dto;
 
-public class UserDto
+public class BaseUserDto
 {
     public required string Name { get; set; }
 

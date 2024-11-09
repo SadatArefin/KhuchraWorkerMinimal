@@ -1,4 +1,4 @@
-﻿namespace KhuchraWorkerMinimal.Data.Entities
+﻿namespace KhuchraWorkerMinimal.Dto
 {
     public enum Role
     {
