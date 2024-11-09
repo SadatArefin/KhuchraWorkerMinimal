@@ -1,5 +1,5 @@
 ﻿using KhuchraWorkerMinimal.Data;
-using KhuchraWorkerMinimal.Entities;
+using KhuchraWorkerMinimal.Data.Entities;
 using KhuchraWorkerMinimal.Interfaces;
 using Microsoft.EntityFrameworkCore;
 

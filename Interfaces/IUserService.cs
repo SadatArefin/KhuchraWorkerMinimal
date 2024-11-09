@@ -1,4 +1,4 @@
-﻿using KhuchraWorkerMinimal.Entities;
+﻿using KhuchraWorkerMinimal.Data.Entities;
 
 namespace KhuchraWorkerMinimal.Interfaces;
 

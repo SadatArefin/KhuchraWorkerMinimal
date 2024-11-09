@@ -1,5 +1,5 @@
-﻿using KhuchraWorkerMinimal.Dto;
-using KhuchraWorkerMinimal.Entities;
+﻿using KhuchraWorkerMinimal.Data.Entities;
+using KhuchraWorkerMinimal.Dto;
 using KhuchraWorkerMinimal.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
